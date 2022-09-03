@@ -1,0 +1,14 @@
+# basic Raku setup
+# License: MIT
+
+jobs:
+  raku:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Raku/setup-raku@v1  # By default, this sets up the latest rakudo
+      - run: raku -v # <= replace this and add below for your own requirements
+      - run: raku -v # <= use or delete this
+
+      # add commands below for your own requirements
+
